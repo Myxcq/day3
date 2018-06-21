@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin: 0;padding: 0;}
+			
+			.product_box{
+				width: 270px;
+				height: 470px;
+				margin: 50px auto;
+				position:relative;
+				border: 1px solid #000;
+				background: url(img/0202.png) 0 repeat-x;
+			}
+			.product_box>*{
+				position: absolute;
+				transition: all 1s;
+			}
+			.product_box>h3{
+				top:90px;
+				left: 102px;
+			}
+			.product_box>p{
+				top:120px;
+				left: 100px;
+			}
+			.product_box>img{
+				z-index: 10;
+			}
+			.product_box>button{
+				top:350px;
+				left: 110px;
+				padding: 5px;
+				opacity: 0.5;
+				color: white;
+				text-align: center;
+				background: darkviolet;
+				border: 1px solid #ccc;
+			}
+			.product_box:hover h3{
+				top:20px;
+			}
+			.product_box:hover p{
+				top:50px;
+			}
+			.product_box:hover img{
+				transform: scale(0.65);
+			}
+			.product_box:hover button{
+				top:400px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="product_box">
+			<h3>物品名</h3>
+			<p>物品简介</p>
+			<img src="img/0201.jpg"/>
+			<button>物品购买</button>
+		</div>
+	</body>
+</html>

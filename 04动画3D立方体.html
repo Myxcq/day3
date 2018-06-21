@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin: 0;padding: 0;}
+			ul,li{list-style: none;}
+			
+			#cube{
+				width: 300px;
+				height: 300px;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				margin: auto;
+				transform-style: preserve-3d;
+				animation: cuberotate 8s 0s infinite linear;
+			}
+			#cube>li{
+				width: 300px;
+				height: 300px;
+				opacity:0.7;
+				color: white;
+				text-align: center;
+				font-size: 20px;
+				line-height: 300px;
+				position: absolute;
+			}
+			#cube>li:nth-child(1){
+				background: red;
+				transform:translateZ(150px);
+			}
+			#cube>li:nth-child(2){
+				background: darkorange;
+				transform:translateZ(-150px);
+			}
+			#cube>li:nth-child(3){
+				background: gold;
+				transform:rotateY(90deg) translateZ(150px);
+			}
+			#cube>li:nth-child(4){
+				background: darkgreen;
+				transform:rotateY(90deg) translateZ(-150px);
+			}
+			#cube>li:nth-child(5){
+				background: blue;
+				transform:rotateX(90deg) translateZ(150px);
+			}
+			#cube>li:nth-child(6){
+				background: darkviolet;
+				transform:rotateX(90deg) translateZ(-150px);
+			}
+			
+			@keyframes cuberotate{
+				0%{transform: rotateY(0deg) rotateX(45deg);}
+				100%{transform: rotateY(360deg) rotateX(45deg);}
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="cube">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin: 0;padding: 0;}
+			
+			#box{
+				width: 450px;
+				height: 350px;
+				margin: 50px auto;
+				position: relative;
+				border: 1px solid #000;
+			}
+			
+			#box>div:nth-child(1){
+				width:50px;
+				height: 50px;
+				background: violet;
+				position: absolute;
+				animation: ring 8s 0s infinite linear;
+			}
+			#box>div:nth-child(2){
+				width:45px;
+				height: 45px;
+				background: violet;
+				position: absolute;
+				visibility: hidden;
+				animation: ring 8s .5s infinite linear;
+			}
+			#box>div:nth-child(3){
+				width:30px;
+				height: 30px;
+				background: violet;
+				position: absolute;
+				visibility: hidden;
+				animation: ring 8s 1s infinite linear;
+			}
+			
+			@keyframes ring{
+				0%{visibility:visible;transform: translate(200px,150px);}
+				12.5%{transform: translate(300px,0px);}
+				25%{transform: translate(400px,150px);}
+				37.5%{transform: translate(300px,300px);}
+				50%{transform: translate(200px,150px);}
+				62.5%{transform: translate(100px,0px);}
+				75%{transform: translate(0px,150px);}
+				87.5%{transform: translate(100px,300px);}
+				100%{transform: translate(200px,150px);}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</body>
+</html>

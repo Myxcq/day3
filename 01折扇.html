@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin:0;padding: 0;}
+			ul,li{list-style: none;}
+			
+			.box{
+				width: 600px;
+				height: 240px;
+				margin: 50px auto;
+				position: relative;
+			}
+			.box>li{
+				left: 300px;
+				width: 65px;
+				height: 240px;
+				background: red;
+				position: absolute;
+				transition:all 1s;
+				transform-origin: center bottom;
+			}
+			.box:hover li:nth-child(1){
+				transform: rotate(90deg);
+				box-shadow: 1px 1px 1px #000;
+			}
+			.box:hover li:nth-child(2){
+				background: orange;
+				transform: rotate(75deg);
+				box-shadow: 1px 1px 1px #000;
+			}
+			.box:hover li:nth-child(3){
+				background: yellow;
+				transform: rotate(60deg);
+				box-shadow: 1px 1px 1px #000;
+			}
+			.box:hover li:nth-child(4){
+				background: green;
+				transform: rotate(45deg);
+				box-shadow: 1px 1px 1px #000;
+			}
+			.box:hover li:nth-child(5){
+				background: blue;
+				transform: rotate(30deg);
+				box-shadow: 1px 1px 1px #000;
+			}
+			.box:hover li:nth-child(6){
+				background: darkblue;
+				transform: rotate(15deg);
+				box-shadow: 1px 1px 1px #000;
+			}
+			.box:hover li:nth-child(7){
+				background: darkviolet;
+				box-shadow: 1px 1px 1px #000;
+			}
+			.box:hover li:nth-child(8){
+				background: darkblue;
+				transform: rotate(-15deg);
+				box-shadow: 1px 1px 1px #000;
+			}
+			.box:hover li:nth-child(9){
+				background: blue;
+				transform: rotate(-30deg);
+				box-shadow: 1px 1px 1px #000;
+			}
+			.box:hover li:nth-child(10){
+				background: green;
+				transform: rotate(-45deg);
+				box-shadow: 1px 1px 1px #000;
+			}
+			.box:hover li:nth-child(11){
+				background: yellow;
+				transform: rotate(-60deg);
+				box-shadow: 1px 1px 1px #000;
+			}
+			.box:hover li:nth-child(12){
+				background: orange;
+				transform: rotate(-75deg);
+				box-shadow: 1px 1px 1px #000;
+			}
+			.box:hover li:nth-child(13){
+				transform: rotate(-90deg);
+				box-shadow: 1px 1px 1px #000;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="box">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</body>
+</html>
